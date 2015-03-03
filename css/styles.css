@@ -1291,6 +1291,10 @@ Untappd
     width: 50px;
     margin-right: 10px;
 }
+.untappdDate {
+    font-size: 8px;
+    margin-top: 8px;
+}
 
 /* ==========================================================================
 Recipes

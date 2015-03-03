@@ -55,6 +55,7 @@ $(document).ready(function () {
                     html += ' at <a href="https://untappd.com/venue/' + value.venue.venue_id + '" target="_blank">' + value.venue.venue_name + '</a>';
                 }
 
+                html += '<br /><div class="untappdDate">' + formatDate(new Date(value.created_at)) + '</div>';
                 html += '</div>';
 
                 html = '<div>' + html + '</div>';
@@ -99,6 +100,17 @@ function openRecipe(name) {
         'transitionOut': 'elastic',
         'centerOnScroll': true
     }).click();
+}
+
+function formatDate(date) {
+    var hours = date.getHours();
+    var minutes = date.getMinutes();
+    var ampm = hours >= 12 ? 'pm' : 'am';
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    var strTime = hours + ':' + minutes + ' ' + ampm;
+    return date.getMonth() + 1 + "/" + date.getDate() + "/" + date.getFullYear() + "  " + strTime;
 }
 
 function escapeRegExp(string) {
