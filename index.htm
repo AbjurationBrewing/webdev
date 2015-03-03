@@ -50,12 +50,20 @@
         <!-- Facebook plugin garbage -->
         <div id="fb-root"></div>
         <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    appId: '839912299435022',
+                    xfbml: true,
+                    version: 'v2.2'
+                });
+            };
+
             (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-            fjs.parentNode.insertBefore(js, fjs);
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) { return; }
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js";
+                fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
         </script>
 
@@ -322,6 +330,8 @@ Quote Section I removed
 			</div>
 		</section>
 		<section class="screenshots" id="screenshots">
+            <div id="instafeed"></div> 
+
 			<div class="container-fluid">
 				<div class="row">
 					<ul class="grid">
@@ -822,6 +832,7 @@ Quote Section I removed
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/min/scripts-min.js"></script>
         <script src="js/jquery.cookie.js"></script>
+        <script src="js/min/instafeed.min.js"></script>
         <script src="js/global.js"></script>
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>

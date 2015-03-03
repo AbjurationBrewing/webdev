@@ -70,6 +70,15 @@ $(document).ready(function () {
         // error
     });
 
+    var feed = new Instafeed({
+        //resolution: 'low_resolution',
+        //sortBy: 'random',
+        get: 'user',
+        userId: 1498935118,
+        accessToken: '1498935118.467ede5.d6db291117c6405a9061608a0232cc32'
+    });
+    feed.run();
+
     $('.openRecipeLink').click(function () {
         openRecipe($(this).closest('li').find('h1').html());
         return false;
