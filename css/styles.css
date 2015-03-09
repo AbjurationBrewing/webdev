@@ -761,7 +761,7 @@ font-size: 14px;
 .features-slider .flickity-page-dots {
     text-align: left;
     margin-top: 50px;
-    position: static;
+    /*position: static;*/
 }
 .features-slider .flickity-page-dots .dot {
     margin: 0 12px 0 0;
@@ -1223,7 +1223,7 @@ Social Media Div
     height: 600px;
     background-color: white;
     border-radius: 5px;
-    margin-left: 10px;
+   /* margin-left: 30px; */
     position: relative;
 }
 .fb-like-box {
@@ -1231,6 +1231,10 @@ Social Media Div
     border-radius: 5px;
     margin-left: 10px;
 }
+
+.socialMediaDiv .socialPadding {
+	margin: 0px 50px 40px 0px;
+	}
 
 /* ==========================================================================
 Untappd 
