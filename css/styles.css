@@ -892,6 +892,7 @@ Screenshots Intro
     padding: 50px 40px 50px 40px;
     background-color: #fff;
 	background: url(../images/hops_backgound3.gif) repeat;
+    min-height:400px;
 }
 .screenshots-intro h1 {
     margin-bottom: 20px;
@@ -1232,8 +1233,12 @@ Social Media Div
     margin-left: 10px;
 }
 
-.socialMediaDiv .socialPadding {
-	margin: 0px 50px 40px 0px;
+.socialMediaDiv .socialPaddingFB {
+	margin: 0px 20px 20px -10px;
+	}
+
+.socialMediaDiv .socialPaddingTW {
+	margin: 0px 20px 20px 0px;
 	}
 
 /* ==========================================================================
@@ -1299,6 +1304,28 @@ Untappd
     font-size: 8px;
     margin-top: 8px;
 }
+
+
+/* ==========================================================================
+Instagram  
+========================================================================== */
+#instafeed
+{
+    background-color: #fff;
+    background: url(../images/hops_backgound3.gif) repeat;
+
+}
+
+    #instafeed a img
+    { 
+    }
+
+    #instafeed a
+    { 
+    }
+
+
+
 
 /* ==========================================================================
 Recipes
