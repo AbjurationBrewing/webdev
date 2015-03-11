@@ -111,6 +111,9 @@ Typography
 * Addresses font sizes and margins set differently in IE 6/7.
 * Addresses font sizes within `section` and `article` in Firefox 4+, Safari 5, * and Chrome.
 */
+.bebas
+{ font-family: 'BebasNeueRegular','Open Sans', sans-serif;
+}
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'BebasNeueRegular','Open Sans', sans-serif;}
@@ -529,7 +532,7 @@ Navigation
     position: absolute;
     top: 0;
     right: 15px;
-    z-index: 999999;
+    z-index: 99999;
     padding: 10px 35px 16px 0px;
     cursor: pointer;
 }
@@ -655,7 +658,7 @@ section.beer-list {
 /* ==========================================================================
 Video
 ========================================================================== */
-section.video i {
+section.video i, section#ourbeers i {
     margin-right: 10px;
     color: #323a45;
     vertical-align: middle;
@@ -663,24 +666,26 @@ section.video i {
     -webkit-transition: color 300ms ease-in-out;
     transition: color 300ms ease-in-out;
 }
-section.video h1 {
+section.video h1, section#ourbeers h1 {
     font-weight: 400;
     font-size: 28px;
 }
-section.video {
+section.video, section#ourbeers  {
     padding: 60px 0;
     background-color: #f6f7f9;
 	border-bottom: 30px solid #000;
+    border-top: 30px solid #000;
 }
-section.video a {
+section.video a, section#ourbeers a{
     color: #19b6ff;
 }
-section.video a:hover, section.video a:focus {
+section.video a:hover, section.video a:focus, section#ourbeers a:hover, section#ourbeers a:focus {
     
 	color: #0369bc;
     /*text-decoration: underline;*/
 }
-section.video a:hover i, section.video a:focus i {
+
+section.video a:hover i, section.video a:focus i, section#ourbeers a:hover i, section#ourbeers a:focus i  {
     color: #0369bc;
 }
 
@@ -1195,13 +1200,82 @@ Waypoints
 }
 
 /* ==========================================================================
+Fancybox Custom
+========================================================================== */
+.fancybox-skin
+{
+
+/*border-style: solid;
+border-width: 80px;
+-moz-border-image: url(../images/border4.png) 173 173 173 173 repeat;
+-webkit-border-image: url(../images/border4.png) 173 173 173 173 repeat;
+-o-border-image: url(../images/border4.png) 173 173 173 173 repeat;
+border-image: url(../images/border4.png) 173 173 173 173 repeat;
+
+background:url(../images/hops_backgound1.gif) repeat;
+border-radius: 40px;
+
+*/
+background-color:transparent !important;
+padding:0px !important;
+overflow:visible;
+
+min-width:460px;
+
+
+}
+
+.fancybox-inner
+{ overflow:visible !important;
+  height:auto !important;
+}
+
+.fancybox-overlay
+{z-index:999999 !important;
+}
+
+.fancybox-outer
+{ 
+
+}
+
+.fancybox-skin
+{
+    border-radius: 40px;
+}
+
+/* ==========================================================================
 Age Confirmation Div
 ========================================================================== */
 .ageConfirmDiv {
     display: none;
     font-size: larger;
     text-align: center;
+    padding:20px;
+    background-color:rgba(255,255,255,1.0);
+    border-radius: 40px;
+    min-width:300px;
+    min-height:100px;
+    overflow:visible;
+
+    position:relative;
+    background:url(../images/hops_backgound4.gif) repeat;
+    color:#000;
+
+    border: 20px solid #000;
+    margin-top:30px;
 }
+
+    .ageConfirmDiv #logo, #testMyBalls
+    { position:absolute;
+      width:100%;
+      text-align:center;
+      top:-63px;
+      left:0px;
+
+
+    }
+
 .ageConfirmDiv .btn {
     width: 110px;
     background-color: #D0D0D0;
@@ -1315,7 +1389,8 @@ Instagram
     background: url(../images/hops_backgound3.gif) repeat;
 
      text-align: center;
-     padding-bottom:20px;
+     padding-bottom:40px;
+     border-bottom: 30px solid #000;
 }
 
     #instafeed a img
