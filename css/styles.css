@@ -1282,33 +1282,6 @@ Age Confirmation Div
 }
 
 /* ==========================================================================
-recipe Div
-========================================================================== */
-
-#recipe_RW {
-    display: none;
-    text-align: center;
-    padding:20px;
-    background-color:rgba(255,255,255,1.0);
-    border-radius: 40px;
-    min-width:300px;
-    min-height:100px;
-    overflow:visible;
-
-    position:relative;
-    background:url(../images/hops_backgound4.gif) repeat;
-    color:#000;
-
-    border: 20px solid #000;
-    margin-top:30px;
-}
-
-.recipes
-{ 
-}
-
-
-/* ==========================================================================
 Social Media Div
 ========================================================================== */
 .socialMediaDiv {
