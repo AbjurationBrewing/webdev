@@ -1,13 +1,14 @@
 $(document).ready(function () {
     if ($.cookie("ageOk") !== 't') {
-        $('.ageConfirmDiv').fancybox({
+        $.fancybox({
+            'href': '#ageConfirmDiv',
             'modal': true,
             'closeOnEscape': false,
             'autoScale': true,
             'transitionIn': 'elastic',
             'transitionOut': 'elastic',
             'centerOnScroll': true
-        }).click();
+        });
 
         $('#ageNo').on('click', function (event) {
             event.stopPropagation();
@@ -97,18 +98,14 @@ $(document).ready(function () {
 });
 
 function openRecipe(name) {
-    var div = $('div', '.recipes').filter(function () {
-        return this.id.toLowerCase() == 'pop_' + name.toLowerCase();
-    });
-
-    div.fancybox({
-        'modal': false,
+    $.fancybox({
+        'href': '#pop_' + name,
         'closeOnEscape': true,
         'autoScale': true,
         'transitionIn': 'elastic',
         'transitionOut': 'elastic',
         'centerOnScroll': true
-    }).click();
+    });
 }
 
 function formatDate(date) {
