@@ -80,7 +80,7 @@ $(document).ready(function () {
     feed.run();
 
     $('.openRecipeLink').click(function () {
-        openRecipe($(this).closest('li').find('h1').html());
+        openRecipe($(this).closest('li').find('h1').attr('id'));
         return false;
     });
 
@@ -98,7 +98,7 @@ $(document).ready(function () {
 
 function openRecipe(name) {
     var div = $('div', '.recipes').filter(function () {
-        return this.id.toLowerCase() == 'recipe_' + name.toLowerCase();
+        return this.id.toLowerCase() == 'pop_' + name.toLowerCase();
     });
 
     div.fancybox({
