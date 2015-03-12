@@ -1236,7 +1236,7 @@ min-width:460px;
 
 .fancybox-outer
 { 
-
+margin-bottom:15px;
 }
 
 .fancybox-skin
@@ -1262,24 +1262,72 @@ Age Confirmation Div
     background:url(../images/hops_backgound4.gif) repeat;
     color:#000;
 
-    border: 20px solid #000;
+    border: 20px solid #222;
     margin-top:30px;
+
 }
 
-    .ageConfirmDiv #logo, #testMyBalls
+    .ageConfirmDiv .poplogo, #pop_recipe_5 .poplogo, #pop_recipe_4 .poplogo, #pop_recipe_3 .poplogo, #pop_recipe_2 .poplogo, #pop_recipe_1 .poplogo
     { position:absolute;
       width:100%;
       text-align:center;
-      top:-63px;
+      top:-62px;
       left:0px;
-
-
     }
 
 .ageConfirmDiv .btn {
     width: 110px;
     background-color: #D0D0D0;
 }
+
+/* ==========================================================================
+Recipes
+========================================================================== */
+.recipes {
+    display: none;
+}
+
+#pop_recipe_5, #pop_recipe_4, #pop_recipe_3, #pop_recipe_2, #pop_recipe_1
+{   
+    padding:20px 20px 20px 35px;
+    background-color:rgba(255,255,255,1.0);
+    border-radius: 40px;
+    min-width:300px;
+    min-height:100px;
+    overflow:visible;
+
+    position:relative;
+    background:url(../images/hops_backgound4.gif) repeat;
+    color:#000;
+
+    border: 20px solid #222;
+    margin-top:30px;
+}
+
+
+.recipeTable
+{ /*border:1px solid #000000;
+  background-color:#fff;*/
+  
+}
+
+    .recipeTable td
+    { /*border-bottom:3px solid #000;*/
+      padding: 3px 0px;
+    }
+
+    .recipeTable tr
+    {
+    }
+
+    .recipeTable .thirdwidth
+    { width:33%;
+    }
+
+/*.recipeTable    tr:nth-child(odd) {background: #CCC}*/
+.recipeTable tr:nth-child(even) {background-color:rgba(230, 230, 230, 0.6);}
+
+
 
 /* ==========================================================================
 Social Media Div
@@ -1416,10 +1464,6 @@ Instagram
 
 
 
-/* ==========================================================================
-Recipes
-========================================================================== */
-.recipes {
-    display: none;
-}
+
+
 
