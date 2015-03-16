@@ -1289,7 +1289,7 @@ Recipes
 
 #pop_recipe_5, #pop_recipe_4, #pop_recipe_3, #pop_recipe_2, #pop_recipe_1
 {   
-    padding:20px 20px 20px 35px;
+    padding:20px 35px;
     background-color:rgba(255,255,255,1.0);
     border-radius: 40px;
     min-width:300px;
@@ -1327,7 +1327,27 @@ Recipes
 /*.recipeTable    tr:nth-child(odd) {background: #CCC}*/
 .recipeTable tr:nth-child(even) {background-color:rgba(230, 230, 230, 0.6);}
 
+.recipeList
+{
+list-style-type: square;
+list-style-image: url(../images/bullet.png);
+list-style-position: outside;
+}
 
+.recipeList li {padding: 5px 5px 5px 15px;
+margin: 0px 0px 0px 20px;}
+
+.recipesHeadline
+{ background-color:#fff;
+  text-align:center;
+  padding: 5px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.recipesSubHeadline
+{ background-color:#fff;
+  padding: 5px;
+}
 
 /* ==========================================================================
 Social Media Div
@@ -1336,10 +1356,11 @@ Social Media Div
     width:100%;
 }
 .socialMediaDiv div {
-    float: left;
+    /*float: left;*/
+    display:inline-block;
 }
 .socialMediaDiv iframe {
-    float: left;
+    /*float: left;*/
 }
 .socialMediaDiv .untappdWrapperDiv {
     width: 360px;
