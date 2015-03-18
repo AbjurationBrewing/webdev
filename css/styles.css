@@ -1356,11 +1356,11 @@ Social Media Div
     width:100%;
 }
 .socialMediaDiv div {
-    /*float: left;*/
-    display:inline-block;
+    float: left;
+   /* display:inline-block; */
 }
 .socialMediaDiv iframe {
-    /*float: left;*/
+
 }
 .socialMediaDiv .untappdWrapperDiv {
     width: 360px;
