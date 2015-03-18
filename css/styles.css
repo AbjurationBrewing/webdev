@@ -1356,8 +1356,8 @@ Social Media Div
     width:100%;
 }
 .socialMediaDiv div {
-    float: left;
-   /* display:inline-block; */
+    /*float: left;*/
+   display:inline-block; 
 }
 .socialMediaDiv iframe {
 
@@ -1376,14 +1376,20 @@ Social Media Div
     margin-left: 10px;
 }
 
-.socialMediaDiv .socialPaddingFB {
+.socialPaddingFB {
 	margin: 0px 20px 20px -10px;
+    position:relative;
+    top:-5px;
 	}
 
-.socialMediaDiv .socialPaddingTW {
+.socialPaddingTW {
 	margin: 0px 20px 20px 0px;
 	}
 
+.socialPaddingUT
+{     position:relative;
+    top:-7px;
+}
 /* ==========================================================================
 Untappd 
 ========================================================================== */
