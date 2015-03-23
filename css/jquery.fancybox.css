@@ -183,7 +183,7 @@
 	left: 0;
 	overflow: hidden;
 	display: none;
-	z-index: 8000;
+	z-index: 10 !important;
 	background: url('../img/fancybox_overlay.png');
 }
 
@@ -272,3 +272,9 @@
 		background-size: 24px 24px; /*The size of the normal image, half the size of the hi-res image*/
 	}
 }
+
+
+
+
+
+
