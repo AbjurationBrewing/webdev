@@ -35,4 +35,13 @@
 	.features-slider {padding: 11% 50px 10% 50px;}
 	#heroLogo { min-height:200px;}
     .contact h1    { padding:40px 20px; font-size: 35px;    }
+    
+}
+
+@media screen and (max-width:390px){
+    .socialMediaDiv .untappdWrapperDiv    { width:auto;    }
+    .fb-like-box { width:95%;}
+    .socialPaddingFB .fb_iframe_widget span, .socialPaddingFB .fb_iframe_widget span iframe { width:345px !important; overflow:hidden;  }
+
+
 }
