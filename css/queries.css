@@ -21,6 +21,7 @@
 	nav{margin-top:40px;}
 	.overlay ul{margin-left:0px;}
 	.overlay ul li a{padding:20px 0;min-width:120px;font-size:12px;}
+
 }
 @media screen and (max-width:465px){
 	/*.hero h1{font-size:40px;margin:100px 0 45px 0}*/
@@ -33,4 +34,5 @@
 	blockquote p{width:60%;}
 	.features-slider {padding: 11% 50px 10% 50px;}
 	#heroLogo { min-height:200px;}
+    .contact h1    { padding:40px 20px; font-size: 35px;    }
 }
