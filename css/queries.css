@@ -11,6 +11,7 @@
 	section.video{padding:50px 20px;}
 	.feature-content{width:80%;}
 	.features-slider{height:100%}
+    /*.socialMediaDiv { margin-left:20px;    }*/
 }
 @media screen and (max-width:680px){
 	.feature-content{width:60%;}
@@ -40,8 +41,8 @@
 
 @media screen and (max-width:390px){
     .socialMediaDiv .untappdWrapperDiv    { width:auto;    }
-    .fb-like-box { width:95%;}
-    .socialPaddingFB .fb_iframe_widget span, .socialPaddingFB .fb_iframe_widget span iframe { width:345px !important; overflow:hidden;  }
+    .socialPaddingFB { width:100%;    }
+    .fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style]    { overflow:hidden;    }
 
 
 }

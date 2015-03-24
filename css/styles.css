@@ -1041,6 +1041,11 @@ Contact US
 	background-color:#fff;
 	padding:40px 60px;}
 
+.contactButtons
+{ position:relative;
+  left:10px;
+}
+
 /* ==========================================================================
 Footer
 ========================================================================== */
@@ -1374,9 +1379,10 @@ Social Media Div
 }
 
 .socialPaddingFB {
-	margin: 0px 21px 20px -10px;
+	margin: 0px 31px 20px -10px;
     position:relative;
     top:-5px;
+    width:360px;
 	}
 
 .socialPaddingTW {
@@ -1387,6 +1393,23 @@ Social Media Div
 {     position:relative;
     top:-7px;
 }
+
+/*
+Make the Facebook Like box responsive (fluid width)
+https://developers.facebook.com/docs/reference/plugins/like-box/
+*/
+ 
+/* This element holds injected scripts inside iframes that in some cases may stretch layouts. So hiding it. */
+#fb-root {
+  display: none;
+}
+ 
+/* To fill the container and nothing else */
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+  width: 100% !important;
+}
+
+
 /* ==========================================================================
 Untappd 
 ========================================================================== */
