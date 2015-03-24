@@ -1230,10 +1230,6 @@ min-width:460px;
   height:auto !important;
 }
 
-.fancybox-overlay
-{z-index:999999 !important;
-}
-
 .fancybox-outer
 { 
 margin-bottom:15px;
